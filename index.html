@@ -14,8 +14,10 @@
     <meta property="og:image" content="https://men21049.github.io/wdd230/images/tomas-martinez-gdl.jpg" >
     <link href="styles/normalize.css" rel="stylesheet" >
     <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/large.css" rel="stylesheet" >
 </head>
 <body>
+    <div class="content">
     <header class="border">
         <img class="logo_class" src="images/me.jpg" alt="JC Mena photo" >
         <h1 class="right_20">Juan Carlos Mena Osorio</h1>
@@ -30,31 +32,33 @@
         </ul>
     </nav>
     <main>
-        <h2 class="text_center">WDD 230: Web Frontend Development</h2>
+        <h2 class="head_content text_center">WDD 230: Web Frontend Development</h2>
         <hr>
-        <section class="card">
-            <h3 class="text_center">Learning Activities</h3>
-            <ol>
-                <li><a href="lesson01/holygrail.html">Holy Grail</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/xxBRPPE">CodePen</a></li>
-                <li><a href="lesson02/design.html">Web Design Principles</a></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-        </section>
-        <section class="card text_center">
-            <h3>Information</h3>
-            <br>
-            <h4>Guadalajara, Jalisco, M&eacute;xico</h4>
-            <p>15° Celcius</p>
-            <p>Page Visits : 15</p>
-        </section>
-        
+        <section>
+            <div class="section_1">
+                <h3 class="text_center">Learning Activities</h3>
+                <ol>
+                    <li><a href="lesson01/holygrail.html">Holy Grail</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/xxBRPPE">CodePen</a></li>
+                    <li><a href="lesson02/design.html">Media Query</a> | <a href="lesson02/design.html">Web Design Principles</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            
+            <div class="section_2">
+                <h3 class="text_center">Information</h3>
+                <br>
+                <h4>Guadalajara, Jalisco, M&eacute;xico</h4>
+                <p>15° Celcius</p>
+                <p>Page Visits : 15</p>
+            </div>
+            </section>
     </main>
     <footer class="border">
         <p>&copy; <span id="copyright_year"></span><br>
@@ -65,6 +69,7 @@
         <p id="lastModified">
         </p>
     </footer>
+</div>
     <script src="scripts/getdate.js"></script>
 </body>
 </html>

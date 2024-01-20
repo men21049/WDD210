@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+.content {
+    display: flex;
+    flex-flow: row wrap;
     grid-gap: 10px;
     font-family: 'Montserrat', sans-serif;
+  }
+
+.content > * {
+    flex: 1 100%;
   }
 /* Structure*/
 .border{    
@@ -14,34 +17,40 @@ body {
 
 header {
     padding: 2rem;
-    grid-column: 2 / 4;
   }
 nav {
-    grid-column: 2 / 4;
     background-color: #141B41;
     color: #E6EED6;
-    padding: 1rem;
   }
 main {
-    grid-column: 2 / 4;
     height: 100%;
     padding: 1rem;
   }
 footer {    
     padding: 2rem;
     text-align: center;
-    grid-column: 2 / 4;
   }
 /*End of Structure*/
+
 /*nav*/
 nav a{
     color: #E6EED6;
+    padding-left: 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
-nav li{
-    float: left;
-    padding-left: 2em;
+nav a:hover{
+  border-bottom: 1px solid #fff;
 }
+
+ul{
+  list-style-type: none;
+  padding: 2px;
+}
+
 /*end nav*/
+
 /*Images*/
 .logo_class {
     float: left;
@@ -51,11 +60,7 @@ nav li{
     margin-left: 20px;
   }
 /*End Images*/
-/*Navigation Bar*/
-ul{
-    list-style-type: none;
-}
-/*End of Navigation Bar*/
+
 /*main section*/
 .text_center{
     text-align: center;
@@ -63,12 +68,9 @@ ul{
 section{
     padding-bottom: 10px;
     border-radius: 15px;
+    text-align: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-section .card{
-    text-align: left;;
-}
-
 section h3{
     background-color: #141B41;
     color: #E6EED6;
