@@ -33,16 +33,21 @@ main {
   }
 
 article{
-  display: flex; 
+  display: block; 
   align-items: center; 
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-article iframe{
-  width: 90%;
-}
+.map  {
+  margin: 1rem;;
+  }
+  .map iframe {
+  top: 0;
+  left: 0;
+  width: 80%;
+  }
 
 footer {    
     padding: 2rem;
@@ -131,7 +136,8 @@ section{
     text-align: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-section h3{
+
+h3{
     background-color: #141B41;
     color: #E6EED6;
 }
@@ -158,4 +164,9 @@ section h3{
     text-decoration: none;
     color: #E6EED6;
 	}
+  .map iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
 }
