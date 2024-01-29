@@ -22,16 +22,16 @@
     <header class="border">
         <img class="logo_class" src="images/me.jpg" alt="JC Mena photo" >
         <h1 class="right_20">Juan Carlos Mena Osorio</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng" target="_blank">Scripture</a></li>
+    <button id="menu"></button>
+    <nav class="navigation">
+            <a class="active" href="#">🏠 Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng" target="_blank">Scripture</a>
         </ul>
     </nav>
+    </header>
     <main>
         <h2 class="head_content text_center">WDD 230: Web Frontend Development</h2>
         <hr>
@@ -41,7 +41,7 @@
                 <ol>
                     <li><a href="lesson01/holygrail.html">Holy Grail</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/xxBRPPE">CodePen</a></li>
                     <li><a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Web Design Principles</a></li>
-                    <li><a href="images/combinators_ex_jcmena.png">Combinator Activity</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/vYPpxgw"> CodePen Activity</a></li>
+                    <li><a href="images/combinators_ex_jcmena.png">Combinator Activity</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/vYPpxgw"> CodePen Activity 1</a> | <a href="https://codepen.io/Juan-Carlos-Mena-Osorio/pen/jOJYBxw"> CodePen Responsive Navigation</a> |</li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -61,6 +61,9 @@
             </div>
             </section>
     </main>
+    <article class="map border">
+        <iframe width="930" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14938.113349068499!2d-103.347178!3d20.6073107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1706509327068!5m2!1sen!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
     <footer class="border">
         <p>&copy; <span id="copyright_year"></span><br>
             Juan Carlos Mena Osorio <br> 
@@ -72,5 +75,6 @@
     </footer>
 </div>
     <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
