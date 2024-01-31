@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Poppins', sans-serif;   
+}
+.container > *{
+    flex: 1 100%;
+}
+.layoutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+  }
+.layoutGrid > div {
+    color: black;
+    padding: 10px;
+}
+.layoutGridSmall {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+.layoutGridSmall > div {
+    margin: 290px;
+    padding: 10px;
+}
+
+.color1{
+    background-color: #256EFF;
+    color:white;
+    padding: 8px;
+    text-align: center;
+}
+
+.color2{
+    background-color: #46237A;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.color3{
+    background-color: #3DDC97;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+.color4{
+    background-color: #FCFCFC;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+.color5{
+    background-color: #FF495C;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.border{    
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+footer{
+    text-align: center;
+}
+nav {
+    overflow: hidden;
+	margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #141B41;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❇︎";	
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+    padding-left: 1rem;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #256EFF;
+    background-color: white;
+}
+
+.navigation a:hover {
+  background-color: #46237A;
+  color: #FCFCFC;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.navigation .active{
+	background-color: #46237A;
+    color: #E6EED6;
+	font-weight: 700;
+}
+
+main{
+    padding-top: 5rem;
+}
+@media screen and (min-width: 780px){
+
+    .container {
+        width:960px;
+        margin: auto;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+	display: block;
+    padding-left: 1rem;
+	padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #256EFF;
+    background-color: white;
+	}
+}
