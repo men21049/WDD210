@@ -30,4 +30,28 @@
         display: flex;
         justify-content: center;
     }
+
+    section.spotlight{
+        display: grid;
+        grid-template-areas: 
+            "a a a"
+            "b d c"
+            "b d c";
+    }
+    section.spotlight > article{
+        grid-area: a;
+        text-align: center;
+        background-color: #46237A;
+        color: aliceblue;
+    }
+
+    section.spotlight >.cg1{
+        grid-area: b;
+    }
+    section.spotlight > .cg2{
+        grid-area: c;
+    }
+    section.spotlight > .cg3{
+        grid-area: d;
+    }
 }

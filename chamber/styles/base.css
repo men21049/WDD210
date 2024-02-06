@@ -117,7 +117,10 @@ nav {
     justify-content: center;
   }
   .card {
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 35%;
@@ -131,3 +134,35 @@ nav {
   .cardInfo {
     padding: 2px 16px;
   }
+  .card img{
+    display: block;
+    border: #E6EED6;
+  }
+
+  .cardGreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: black;
+  }
+
+  .cardGreen:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .cardInfoGreen{
+    width: 100%;
+    background-color: #3DDC97;
+    color:#46237A;
+    text-align: center;
+  }
+  
+  .cardGreen img{
+    display: block;
+    margin: 5px;
+    border: #E6EED6;
+  }
+  
