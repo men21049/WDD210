@@ -43,7 +43,8 @@ nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-    text-align: center;
+  text-align: center;
+  background-color: white;
 }
 
 .navigation a {
@@ -73,17 +74,16 @@ nav {
 
 .navigation .active{
 	background-color: #46237A;
-    color: #E6EED6;
+  color: #E6EED6;
 	font-weight: 700;
 }
 
 .shadow {
     width: 100px;
     margin: 0 auto;
-    height: 100px;
-      background-color: #f5f5f5;
-      align-items: center;
-      justify-content: center;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
     &.top {
       box-shadow: 0px -15px 10px -15px #111;    
