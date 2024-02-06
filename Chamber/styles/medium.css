@@ -1,0 +1,35 @@
+@media screen and (min-width: 560px){
+
+    .container {
+        width:700px;
+        margin: auto;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+        display: inline;
+        width:600px;
+		flex-direction: row;
+        justify-content: center;
+	    margin: auto;
+	}
+    img.hero {
+        width: 90%;
+        height: auto;
+    }
+	.navigation a {
+        display:inline-block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #256EFF;
+        background-color: white;
+	}
+
+    section{
+        display: flex;
+        justify-content: center;
+    }
+}
