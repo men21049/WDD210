@@ -78,7 +78,6 @@ nav {
 }
 
 .shadow {
-    width: 100px;
     margin: 0 auto;
     background-color: #f5f5f5;
     align-items: center;
@@ -100,6 +99,9 @@ nav {
   img.hero {
     width: 100%;
     height: auto;
+    padding: 5px;
+    overflow:hidden; 
+    border: 1px solid white;
 }
   .navigation a.join{
     background-color: #256EFF;
