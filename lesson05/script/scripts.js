@@ -4,21 +4,17 @@ const ListVar = document.querySelector("#list");
 
 
 ButtonVar.addEventListener('click',function(){
-    if(InputVar.value != ''){
         const Li = document.createElement('li');
         const DeleteButton = document.createElement('button');
         DeleteButton.textContent = '❌';
+        DeleteButton.id = "Delete";
         Li.textContent = InputVar.value;
         Li.append(DeleteButton);
         ListVar.appendChild(Li);
-    }
-    else{
+        InputVar.value = '';
         InputVar.focus();
-    }
-})
+        DeleteButton.onclick = function(e){
+            ListVar.removeChild(document.querySelector("li"));
+        }
+    })
 
-DeleteButton.addEventListener('click',function(){
-    ListVar.removeChild(document.querySelector("li"));
-    InputVar.value = '';
-    InputVar.focus();
-});
