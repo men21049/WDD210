@@ -15,6 +15,14 @@
         justify-content: center;
 	    margin: auto;
 	}
+    .navigationDark {
+        display: inline;
+        width:960px;
+		flex-direction: row;
+        justify-content: center;
+        margin: auto;   
+        background-color: #256EFF;
+      }
     
 	.navigation a {
         display:inline-block;
@@ -25,6 +33,16 @@
         color: #256EFF;
         background-color: white;
 	}
+    .navigationDark a {
+        display:inline-block;
+        padding-left: 1rem;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color:  #256EFF;
+        transition: 0.3s;
+    }
 
     section{
         display: flex;

@@ -28,6 +28,15 @@
         background-color: white;
 	}
 
+    .navigation a {
+        display:inline-block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color:  #256EFF;
+	}
+
     section{
         display: flex;
         justify-content: center;
