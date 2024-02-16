@@ -44,6 +44,31 @@
         transition: 0.3s;
     }
 
+    .herolabel {
+        position: absolute;
+        top: 250px;
+        left: 144px;
+      /*-webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+      /*filter: blur(3px);*/
+      background-color:transparent;
+        /*background: radial-gradient(#46237A, #FF495C);
+        padding: 1.5rem;*/
+        opacity: 0.75;
+      border-radius: 13%;
+    }
+
+    .herolabel h1{
+        margin: 0;
+      color: #fafafa;
+        padding: .25rem;
+        font-size: 2.76rem;
+      line-height: 1.2288;
+      font-weight: 700;
+      margin-bottom: 0;
+      letter-spacing: -.01em;
+        font-family:"Great Vibes", serif;
+    }
+
     section{
         display: flex;
         justify-content: center;
