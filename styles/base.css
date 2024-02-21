@@ -3,7 +3,7 @@
 .content {
     display: flex;
     flex-flow: row wrap;
-    grid-gap: 10px;
+    grid-gap: 15px;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -140,6 +140,38 @@ section{
 h3{
     background-color: #141B41;
     color: #E6EED6;
+}
+
+.hero {
+	margin: 5px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.heroLabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #141B41);
+	padding: 1.25rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.heroLabel p {
+	margin: 0;
+  mix-blend-mode:color-burn; 
+  padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
 }
 
 .section_2{
