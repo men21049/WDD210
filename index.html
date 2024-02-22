@@ -19,7 +19,9 @@
     <div class="content">
     <header class="border">
         <picture>
-            <img class="logo_class" srcset="images/me.jpg" alt="JC Mena photo" width="150" height="150">
+            <source media="(min-width:150)" 
+                    srcset="images/me.jpg">
+            <img class="logo_class" srcset="images/me.jpg" alt="JC Mena photo">
         </picture>
         
         <h1 class="right_20">Juan Carlos Mena Osorio</h1>
@@ -38,8 +40,8 @@
         <section>
             <div class="hero text_center border">
                 <picture>
-                    <source srcset="images/guadalajara-mexico-temple-large.webp" media="(min-width:600px)">
-                    <source srcset="images/guadalajara-mexico-temple-small.webp" media="(max-width:600px)">
+                    <source media="(min-width:960px) 960w" srcset="images/guadalajara-mexico-temple-large.webp">
+                    <source media="(min-width:400px) 400w" srcset="images/uadalajara-mexico-temple-small.webp">
                     <img src="images/guadalajara-mexico-temple-large.webp" alt="Guadalajara LDS Temple">
                 </picture> 
                 <div class="heroLabel">

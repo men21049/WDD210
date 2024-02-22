@@ -132,8 +132,8 @@ main{
 }
 .herolabel {
 	position: absolute;
-	top: 70px;
-	left: 80px;
+	top: 20px;
+	left: 30px;
   /*-webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
   /*filter: blur(3px);*/
   background-color:transparent;
@@ -145,7 +145,8 @@ main{
 
 .herolabel h1{
 	margin: 0;
-  color: #fafafa;
+  color: #46237A;
+  mix-blend-mode: difference;
 	padding: .25rem;
 	font-size: 1rem;
   line-height: 1.2288;

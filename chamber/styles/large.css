@@ -46,7 +46,7 @@
 
     .herolabel {
         position: absolute;
-        top: 250px;
+        top: 50px;
         left: 144px;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 16px;
@@ -65,7 +65,8 @@
 
     .herolabel h1{
         margin: 0;
-        color: #fafafa;
+        color: #46237A;
+        mix-blend-mode: difference;
         padding: .25rem;
         font-size: 2.76rem;
         line-height: 1.2288;

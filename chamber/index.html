@@ -38,8 +38,11 @@
     <main id="main">
         <section class="hero">
             <picture>
-            <img class="shadow bottom" src="images/GuadalajaraBackground.jpg" alt="Image of Guadalajara" width="960" height="560">
-        </picture>
+                <source media="(min-width:960px)" srcset="images/wdd230-org_large.webp">
+                <source media="(min-width:400px)" srcset="images/wdd230-org_medium.webp">
+                <source media="(max-width:399px)" srcset="images/wdd230-org_small.webp">
+                <img class="shadow bottom" src="images/wdd230-org_large.webp" alt="Image of WD230 lesson06">
+            </picture>
         <div class="herolabel">
 			<h1>Miravalle Chamber of Commerce!</h1>
 		</div>
@@ -60,7 +63,9 @@
             <div class="card">
                 <div class="cardInfo">
                   <h4><b>Weather in Miravalle</b></h4>
-                  <p>Wheater in Miravalle</p>
+                  <p>Current Temperature: <span class="cTemp"><b>49°🌡️</b></span></p>
+                  <p>Wind Speed: <span class="wSpeed"><b>4mph🍃</b></span></p>
+                  <p>WindChill: <span class="wChill"><b></b></span></p>
                 </div>
             </div>
         </section>
@@ -70,21 +75,30 @@
             </article>
             <br>
             <div class="cardGreen cg1">
-                <img src="images/companyex_1.jpg" alt="Company example" width="200" height="150">
+                <picture>
+                    <source media="(min-width:200px)" srcset="images/companyex_1.webp">
+                    <img src="images/companyex_1.webp" alt="Company example">
+                </picture>
                 <div class="cardInfoGreen">
                   <h4><b>Company 1</b></h4>
                   <p>Company 1 info</p>
                 </div>
             </div>
             <div class="cardGreen cg2">
-                <img src="images/companyex_1.jpg" alt="Company example" width="200" height="150">
+                <picture>
+                    <source media="(min-width:200px)" srcset="images/companyex_1.webp">
+                    <img src="images/companyex_1.webp" alt="Company example">
+                </picture>
                 <div class="cardInfoGreen">
                     <h4><b>Company 2</b></h4>
                     <p>Company 2 info</p>
                 </div>
             </div>
             <div class="cardGreen cg3">
-                <img src="images/companyex_1.jpg" alt="Company example" width="200" height="150">
+                <picture>
+                    <source media="(min-width:200px)" srcset="images/companyex_1.webp">
+                    <img src="images/companyex_1.webp" alt="Company example">
+                </picture>
                 <div class="cardInfoGreen">
                     <h4><b>Company 3</b></h4>
                     <p>Company 3 info</p>
@@ -105,5 +119,6 @@
 </div>
 <script src="scripts/getdate.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
