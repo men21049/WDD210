@@ -1,4 +1,4 @@
-@media screen and (min-width: 780px){
+@media screen and (min-width: 500px){
 
     .container {
         width:960px;
@@ -103,5 +103,22 @@
     }
     section.spotlight > .cg3{
         grid-area: d;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 960px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "topHEad  topHEad"
+          "sidebar  picMain"
+          "footer footer";
+      }
+    .picMain img{
+        display: block;
+    }
+
+    .picMain img:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 }

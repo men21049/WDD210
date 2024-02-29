@@ -45,7 +45,6 @@ main{
   z-index: 9999;
 	flex-direction: column;
 	list-style: none;
-  text-align: center;
   background-color: white;
 }
 
@@ -322,5 +321,37 @@ main{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .sidebar{
+    grid-area: sidebar;
+    margin: 2rem;
+  }
+
+  .picMain{
+    grid-area: picMain;
+    margin: 2rem;
+  }
+
+  .picMain img{
+    margin-bottom: 2rem;
+  }
+
+  footer{
+    grid-area: footer;
+  }
+
+  .topHEad{
+    grid-area:topHEad;
+  }
+
+  .wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "topHEad"
+      "sidebar"
+      "picMain"
+      "footer";
   }
   
