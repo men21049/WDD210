@@ -1,0 +1,28 @@
+  table{
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(215, 133, 133, 0.25);
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  th:first-child {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  td {
+    text-align: center;
+  }
