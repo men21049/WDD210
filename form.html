@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Juan Carlos Mena Osorio">
-    <meta name="description" content="Course assignment Portal for the class WDD 230 - Web Frontend Development at BYU-I. Author student name: Juan Carlos Mena">
-    <title>Juan Carlos Mena - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Form style and solution for WDD230 class">
+    <title>Form Exercise for WD230</title>
     <meta property="og:title" content="Website dedicated to WDD 230 - Web Frontend Development at BYU-I" >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://men21049.github.io/wdd230/" >
@@ -14,6 +14,7 @@
     <link href="styles/normalize.css" rel="stylesheet" >
     <link href="styles/base.css" rel="stylesheet" >
     <link href="styles/large.css" rel="stylesheet" >
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <div class="content">
@@ -53,8 +54,8 @@
                             pattern="[a-zA-Z0-9_.\-]+@byui.edu" 
                             required></label>
             <div id="emailMessage"></div>
+            <div id="rangevalue"></div>
             <label>Page Rating 
-                <div id="rangevalue"></div>
                 <input type="range" name="pageRating" id="pageRating" min="1" max="10" value="0" step="1" list="rangevalues">
                 <datalist id="rangevalues">
                     <option value="0">0</option>
@@ -78,11 +79,12 @@
         <p>&copy; <span id="copyright_year"></span><br>
             Juan Carlos Mena Osorio <br> 
             Jalisco, M&eacute;xico
-            <img src="../images/Mexico.png" alt="Mexico flag" width="20" height="20">
+            <img src="images/Mexico.png" alt="Mexico flag" width="20" height="20">
         </p>
         <p id="lastModified">
         </p>
     </footer>
+    </div>
     <script src="scripts/checkForm.js"></script>
 </body>
 </html>
