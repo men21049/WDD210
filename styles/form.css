@@ -7,26 +7,26 @@
 
     .wf1 fieldset{
         margin: 2rem 0;
-        border: --px-size solid #ddd;
+        border: var(--px-size) solid #ddd;
         border-radius: 6px;
         padding: .5rem 2%;
       }
       
       .wf1 legend{
-        color:--legen-color;
+        color:var(--legen-color);
         padding: 0 .5rem;
       }
       
       .wf1 label{
         display: block;
-        padding-top: --pane-padding;
+        padding-top: var(--pane-padding);
         color: red;
         font-size: .9rem;
       }
       
       .wf1 div{
-        padding-top: --pane-padding;
-        color:--legen-color;
+        padding-top: var(--pane-padding);
+        color:var(--legen-color);
         font-size: .9rem;
       }
       
