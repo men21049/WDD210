@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Juan Carlos Mena Osorio">
+    <meta 
+        name="description" 
+        content="Colonia Miravalle Chamber of Commerce Web Site. A site dedicated to business networking and providing access to the several business located in the zone.">
+    <title>Miravalle Chamber of Commerce</title>
+    <meta property="og:title" content="Miravalle Chamber of Commerce Web Site" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://men21049.github.io/wdd230/Chamber/" >
+    <meta property="og:image" content="https://men21049.github.io/wdd230/images/tomas-martinez-gdl.jpg" >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet" >
+    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/medium.css" rel="stylesheet" >
+    <link href="styles/large.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+    <header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">🏠 Home</a>
+            <a href="">Businesses List</a>
+            <a href="" class="join">👩🏻‍💼 Join</a>
+            <a href="" >Contact</a>
+            <a href="">About us</a>
+            <label class="switch">
+                <input type="checkbox" class="addColor">
+                <span class="slider round"></span>
+              </label>
+        </nav>
+    </header>
+    <br><br> <br><br>
+    <main id="main">
+        <form action="thankyou.html" class="wf1" method="get">
+            <fieldset>
+                <legend>User information</legend>
+                <label>First Name*: <input type="text" name="fname" id="fname" placeholder="First Name" required></label>
+                <label>Last Name*: <input type="text" name="lname" id="lname" placeholder="Last Name" required  ></label>
+                <label>Title or Position*: <input type="text" name="title" id="title"
+                                            pattern="[a-zA-Z]{7}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Email*: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9\_.-]+@[a-zA-Z0-9].[a-zA-Z]" placeholder="someone@email.com" required></label>
+                <label>Mobile Phone Number*: <input type="tel" name="mphone" id="mphone"  placeholder="1234567890" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Company Information</legend>
+                <div class="wf1_div">Membership Level</div>
+                   <label><input type="radio" name="membership" id="npmembership">NP Membership(for non profit organizations and there is no fee)</label>
+                   <label><input type="radio" name="membership" id="bonzemembership">Bronze Membership</label>
+                   <label><input type="radio" name="membership" id="silvermembership">Silver Membership</label>
+                   <label><input type="radio" name="membership" id="goldmembership">Gold Membership</label>
+                <section class="spotlight">
+                    <div class="cardDark">
+                        <div>
+                          <h4><b>NP Membership(for non profit organizations,no fee)</b></h4>
+                          <ul>
+                            <li>Tailored for non profit organizations.</li>
+                            <li>No Monthly Fee.</li>
+                            <li>Networking opportunities.</li>
+                            <li>Collaboration with other non-profits.</li>
+                            <li>Directory listing.</li>
+                          </ul>
+                          <p>💲 0.0/month</p>
+                        </div>
+                    </div>
+                    <div class="cardDark">
+                        <div>
+                            <h4><b>Bronze Membership</b></h4>
+                            <ul>
+                                <li>Affordable annual fee</li>
+                                <li>Directory Listing</li>
+                                <li>Educational Resources</li>
+                                <li>Networking Opportunities</li>
+                            </ul>
+                            <p>💲 50.0/month</p>
+                        </div>
+                    </div>
+                    <div class="cardDark">
+                        <div>
+                            <h4><b>Silver Membership</b></h4>
+                            <ul>
+                                <li>Priority Directory Listing</li>
+                                <li>Event Discounts</li>
+                                <li>Recognition in Communications</li>
+                                <li>Networking Opportunities.</li>
+                            </ul>
+                            <p>💲 100.0/month</p>
+                        </div>
+                    </div>
+                    <div class="cardDark">
+                        <div>
+                            <h4><b>Gold Membership</b></h4>
+                            <ul>
+                                <li>Featured Directory Placement</li>
+                                <li>VIP Event Access</li>
+                                <li>Sponsorship Opportunities</li>
+                                <li>Exclusive Networking Events</li>
+                            </ul>
+                            <p>💲 150.0/month</p>
+                        </div>
+                    </div>
+                </section>
+                <label>Company Description
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </label>
+                <input type="hidden" id="date" name="date">
+            </fieldset>
+            <input type="submit" name="submit" value="Send Request to Join">
+        </form>
+    </main>
+    <br>
+    <footer class="shadow bottom">
+        <h2>Miravalle Jalisco, M&eacute;xico Chamber of Commerce</h2>
+        <p>&copy; <span id="copyright_year"></span>
+            Juan Carlos Mena Osorio <br> 
+            <img src="images/Mexico.png" alt="Mexico flag" width="20" height="20">
+            Project for WDD 230 at BYU-I
+            <span id="lastModified"></span>
+        </p>  
+    </footer>
+</div>
+<script src="scripts/getdate.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+</html>
