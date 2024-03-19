@@ -1,0 +1,138 @@
+{
+    "lessons":[
+        {
+            "lesson":"01",
+            "links": [
+                {
+                    "url":"lesson01/holygrail.html",
+                    "title":"Holy Grail"
+                },
+                {
+                    "url":"https://codepen.io/Juan-Carlos-Mena-Osorio/pen/xxBRPPE",
+                    "title":"CodePen"
+                }
+            ]
+        },
+        {
+            "lesson":"02",
+            "links": [
+                {
+                    "url":"lesson02/media-query.html",
+                    "title":"Media Query"
+                },
+                {
+                    "url":"lesson02/design-principles.html",
+                    "title":"Web Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson":"03",
+            "links": [
+                {
+                    "url":"images/combinators_ex_jcmena.png",
+                    "title":"Combinator Activity"
+                },
+                {
+                    "url":"https://codepen.io/Juan-Carlos-Mena-Osorio/pen/vYPpxgw",
+                    "title": "CodePen Activity 1"
+                },
+                {
+                    "url":"https://codepen.io/Juan-Carlos-Mena-Osorio/pen/jOJYBxw",
+                    "title":"CodePen Responsive Navigation"
+                },
+                {
+                    "url":"lesson03/chamber-site-plan.html",
+                    "title":"Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson":"04",
+            "links": [
+                {
+                    "url":"https://codepen.io/Juan-Carlos-Mena-Osorio/pen/VwRXwVr",
+                    "title":"CSS Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson":"05",
+            "links": [
+                {
+                    "url":"chamber/",
+                    "title":"Miravalle Chamber of Commber"
+                }
+            ]
+        },
+        {
+            "lesson":"06",
+            "links": [
+                {
+                    "url":"lesson05/bom.html",
+                    "title":"Book Application"
+                }
+            ]
+        },
+        {
+            "lesson":"07",
+            "links": [
+                {
+                    "url":"lesson03/images/landscape.webp",
+                    "title":"WebP"
+                }
+            ]
+        },
+        {
+            "lesson":"08",
+            "links": [
+                {
+                    "url":"lesson07/lazyloading.html",
+                    "title":"Lazy Loading practice"
+                },
+                {
+                    "url":"lesson07/BOM/bom.html",
+                    "title":"BOM revisited"
+                },
+                {
+                    "url":"chamber/discover.html",
+                    "title": "Chamber - Discover"
+                }
+            ]
+        },
+        {
+            "lesson":"09",
+            "links": [
+                {
+                    "url":"lesson08/tablebuild.html",
+                    "title":"Table Build"
+                },
+                {
+                    "url":"lesson08/Form-start/index.html",
+                    "title":"Form 1"
+                },
+                {
+                    "url":"form.html",
+                    "title":"Form 2"
+                },
+                {
+                    "url":"chamber/join.html",
+                    "title":"Chamber Form"
+                }
+            ]
+        },
+        {
+            "lesson":"10",
+            "links": [
+                {
+                    "url":"lesson09/new-ward-members.json",
+                    "title":"JSON file"
+                },
+                {
+                    "url":"lesson09/prophets.html",
+                    "title":"List of Latter-day Prophets"
+                }
+            ]
+        }
+    ]
+}
