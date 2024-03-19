@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+    "familyName": "Mena-Villegas",
+    "moveInDate": "2010-02-18",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Juna Carlos Mena OSorio",
+        "gender": "Male",
+        "birthdate": "1982-06-22"
+      },
+      {
+        "name": "Martha Villegas Olmedo",
+        "gender": "Female",
+        "birthdate": "1973-10-10"
+      },
+      {
+        "name": "Javier Anaya Villegas",
+        "gender": "Male",
+        "birthdate": "2000-11-04"
+      },
+      {
+        "name": "Orlando Levi Mena",
+        "gender": "Male",
+        "birthdate": "2007-06-02"
+      }
+    ]
+    }
+  }
