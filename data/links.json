@@ -131,6 +131,10 @@
                 {
                     "url":"lesson09/prophets.html",
                     "title":"List of Latter-day Prophets"
+                },
+                {
+                    "url":"index.html",
+                    "title":"JSON Menu"
                 }
             ]
         }
