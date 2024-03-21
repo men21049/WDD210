@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Juan Carlos Mena Osorio">
+    <meta 
+        name="description" 
+        content="Colonia Miravalle Chamber of Commerce Web Site. A site dedicated to business networking and providing access to the several business located in the zone.">
+    <title>Miravalle Chamber of Commerce</title>
+    <meta property="og:title" content="Miravalle Chamber of Commerce Web Site" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://men21049.github.io/wdd230/Chamber/" >
+    <meta property="og:image" content="https://men21049.github.io/wdd230/images/tomas-martinez-gdl.jpg" >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet" >
+    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/medium.css" rel="stylesheet" >
+    <link href="styles/large.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+    <header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="">🏠 Home</a>
+            <a href="">Businesses List</a>
+            <a href="join.html" class="join">👩🏻‍💼 Join</a>
+            <a href="" >Contact</a>
+            <a href="">About us</a>
+            <label class="switch">
+                <input type="checkbox" class="addColor">
+                <span class="slider round"></span>
+              </label>
+        </nav>
+    </header>
+    <br><br> <br><br>
+    <hr>
+    <main id="main">
+        <div>
+            <h1>Business Directory</h1>
+            <hr>
+            <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+        </div>
+        <section>
+            <div class="card">
+                <div class="cardInfo">
+                  <h4><b>Events</b></h4>
+                  <p>List of Events|</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardInfo">
+                  <h4><b>Sucess Stories</b></h4>
+                  <p>List of Sucess Stories</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardInfo">
+                  <h4><b>Weather in Miravalle</b></h4>
+                  <p>Current Temperature: <span class="cTemp"><b>49°🌡️</b></span></p>
+                  <p>Wind Speed: <span class="wSpeed"><b>4mph🍃</b></span></p>
+                  <p>WindChill: <span class="wChill"><b></b></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer class="shadow bottom">
+        <h2>Miravalle Jalisco, M&eacute;xico Chamber of Commerce</h2>
+        <p>&copy; <span id="copyright_year"></span>
+            Juan Carlos Mena Osorio <br> 
+            <img src="images/Mexico.png" alt="Mexico flag" width="20" height="20">
+            Project for WDD 230 at BYU-I
+            <span id="lastModified"></span>
+        </p>  
+    </footer>
+</div>
+<script src="scripts/getdate.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/members.js"></script>
+</body>
+</html>
