@@ -1,6 +1,6 @@
 const url = "https://men21049.github.io/wdd230/data/members.json";
-const img_url = "https://men21049.github.io/wdd230/";
-const cardMember = document.querySelector('.card');
+const img_url = "https://men21049.github.io/wdd230/chamber/";
+const cardMember = document.querySelector('.cardMembers');
 
 window.onload = () =>{
 
@@ -12,27 +12,41 @@ window.onload = () =>{
     
     function displayLinks(members){
         members.forEach(member => {
+            const divCard = document.createElement('div');
             const div = document.createElement('div');
             const name = document.createElement('h4');
             const img = document.createElement('img');
             const address = document.createElement('p');
             const phone = document.createElement('p');
             const url = document.createElement('p');
-            const membership = document.createElement('p');
-            const other = document.createElement('p');
-
+            
+            divCard.setAttribute('class','card');
             div.setAttribute('class','cardInfo');
             name.textContent = member.names;
 
-            if(member.log = "None"){
+            if(member.logo == "None"){
                 img.setAttribute('src','https://placehold.co/40x40/png');
+
             }
             else{
                 img.setAttribute('src',img_url+member.logo);
+                img.setAttribute('width','40');
+                img.setAttribute('height','40');                
             }
+
+            img.setAttribute('alt',name);
+            address.textContent = "Address: " + member.address;
+            console.log(member.address);
+            phone.textContent = "Phone Number: " + member.phone_number;
+            url.textContent = "Website: " + member.URL;
+
             div.appendChild(name);
             div.appendChild(img);
-
+            div.appendChild(address);
+            div.appendChild(phone);
+            div.appendChild(url);
+            divCard.appendChild(div);
+            cardMember.appendChild(divCard);
         });
         
     }

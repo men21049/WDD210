@@ -2,8 +2,8 @@
     "members":[
         {
             "names":"Ciber papeleria misterpc",
-            "addresses":"Artes Plásticas 273, Miravalle, 44990 Guadalajara, Jal.",
-            "phone_numbers":"3327946713",
+            "address":"Artes Plásticas 273, Miravalle, 44990 Guadalajara, Jal.",
+            "phone_number":"3327946713",
             "URL": "None",
             "logo":"images/directory/misterpc.png",
             "membership_level": "Silver Membership",
@@ -11,7 +11,7 @@
         },
         {
             "names":"Noticias Miravalle",
-            "addresses":"CIAC Miravalle, Arq. Mauricio Campos 443, Miravalle, 44990 Guadalajara, Jal.",
+            "address":"CIAC Miravalle, Arq. Mauricio Campos 443, Miravalle, 44990 Guadalajara, Jal.",
             "phone_numbers":"3319687659",
             "URLs":"None",
             "logo":"images/directory/noticiasMiravalle.png",
@@ -20,16 +20,16 @@
         },
         {
             "names":"Abarrotes Ara",
-            "addresses":"P.º Pedro Ciprés 4550A, Miravalle, 44990 Guadalajara, Jal.",
+            "address":"P.º Pedro Ciprés 4550A, Miravalle, 44990 Guadalajara, Jal.",
             "phone_numbers":"None",
             "URLs":"None",
-            "logo":"",
+            "logo":"None",
             "membership_level":"Bronze Membership",
             "Other_Info": "Convinience Store"
         },
         {
             "names":"Onmilife y Seytu Centro Distribución",
-            "addresses":"Edgar Degas 4699, Miravalle, 45590 San Pedro Tlaquepaque, Jal.",
+            "address":"Edgar Degas 4699, Miravalle, 45590 San Pedro Tlaquepaque, Jal.",
             "phone_numbers":"3316388753",
             "URLs":"None",
             "logo":"None",
@@ -38,7 +38,7 @@
         },
         {
             "names":"Mercado Miravalle",
-            "addresses":"Av. Arquitectura 360, Miravalle, 44990 Guadalajara, Jal.",
+            "address":"Av. Arquitectura 360, Miravalle, 44990 Guadalajara, Jal.",
             "phone_numbers":"3336707821",
             "URLs":"None",
             "logo":"None",
@@ -47,7 +47,7 @@
         },
         {
             "names":"Mecanico en General",
-            "addresses":"Arq, Arquitecto Federico E. Mariscal 334, Miravalle, 44990",
+            "address":"Arq, Arquitecto Federico E. Mariscal 334, Miravalle, 44990",
             "phone_numbers":"3333813474",
             "URLs":"None",
             "logo":"None",
