@@ -1,6 +1,7 @@
 const url = "https://men21049.github.io/wdd230/data/members.json";
 const img_url = "https://men21049.github.io/wdd230/chamber/";
-const cardMember = document.querySelector('.cardMembers');
+const display = document.querySelector("#card-wrapper");
+
 
 window.onload = () =>{
 
@@ -12,16 +13,16 @@ window.onload = () =>{
     
     function displayLinks(members){
         members.forEach(member => {
-            const divCard = document.createElement('div');
+
             const div = document.createElement('div');
-            const name = document.createElement('h4');
+            const name = document.createElement('h3');
             const img = document.createElement('img');
             const address = document.createElement('p');
-            const phone = document.createElement('p');
-            const url = document.createElement('p');
+            const phone = document.createElement('h5');
+            const url = document.createElement('h6');
             
-            divCard.setAttribute('class','card');
-            div.setAttribute('class','cardInfo');
+            div.setAttribute("class","cardM");
+
             name.textContent = member.names;
 
             if(member.logo == "None"){
@@ -45,14 +46,30 @@ window.onload = () =>{
             div.appendChild(address);
             div.appendChild(phone);
             div.appendChild(url);
-            divCard.appendChild(div);
-            cardMember.appendChild(divCard);
+            display.appendChild(div);
         });
         
     }
 
     getLinks();
 }
+
+const gridBtn = document.getElementById('gridBtn');
+const listBtn = document.getElementById('listBtn');
+
+gridBtn.addEventListener('click', clickButton);
+listBtn.addEventListener('click', clickButton);
+
+function clickButton(event) {
+	event.preventDefault();
+	let newStyle = event.target.id;
+	newStyle = newStyle.replace('Btn', '');
+	const element = document.getElementById("card-wrapper");
+  element.classList.remove("grid");
+	element.classList.remove("list");
+	element.classList.add(newStyle);
+}
+
 /*
 <div class="cardInfo">
                   <h4><b>Events</b></h4>

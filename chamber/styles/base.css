@@ -201,11 +201,11 @@ main{
   .card {
     display: flex;
     flex-direction: column;
+    grid-template-columns: 12%;
     align-items: center;  
     margin: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 35%;
     background-color: white;
   }
   .cardDark {
@@ -461,4 +461,46 @@ main{
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+
+  .members {
+    width: 90vw;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+  .btn {
+    height: 55px;
+    background: var(--legen-color);
+    color: white;
+    padding: 10px 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 350;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+  }
+
+  .cardM {
+    border: 1px solid black;
+    padding: 10px;
+    background: white;
+    margin-bottom: 20px;
+  }
+  
+  #card-wrapper {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+    gap: 10px 20px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .list {
+    grid-template-columns: 1fr;
   }
