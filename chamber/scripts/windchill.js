@@ -21,14 +21,15 @@ const currentWindChill = document.querySelector('.wSpeed');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.62&lon=-103.35&appid=263cf71672fff58aea296c19f5ddaf92&units=imperial';
+const urlCurrentTemp = 'https://api.openweathermap.org/data/2.5/weather?lat=20.62&lon=-103.35&appid=263cf71672fff58aea296c19f5ddaf92&units=imperial';
+const urlForecastTemp = 'api.openweathermap.org/data/2.5/forecast?id=3981461&appid=263cf71672fff58aea296c19f5ddaf92&units=imperial';
 
-async function apiFetch(){
+async function apiFetch(url){
     try {
         const response = await fetch(url);
         if(response.ok){
             const data = await response.json();
-            displayWeather(data);
+            return data;
         }
         else{
             throw Error(await response.text());
@@ -38,8 +39,12 @@ async function apiFetch(){
     }
 }
 
-function displayWeather(data){
-    currentTemp.textContent = data.main.temp + "°F";
+async function displayWeather(){
+
+    const data = await apiFetch(urlCurrentTemp);
+    console.log(data);
+
+    /*currentTemp.textContent = data.main.temp + "°F";
     weatherIcon.setAttribute('src',`https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     let descriptions = data.weather[0].description.split(" ");
 
@@ -53,8 +58,8 @@ function displayWeather(data){
     const capitalized = description.charAt(0).toUpperCase() + description.slice(1)
     weatherIcon.setAttribute('alt',capitalized);
     captionDesc.textContent = capitalized;
-    currentWindChill.textContent = data.wind.speed + " miles/hour";
+    currentWindChill.textContent = data.wind.speed + " miles/hour";*/
 
 }
 
-apiFetch();
+displayWeather();

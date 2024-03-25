@@ -70,17 +70,4 @@ function clickButton(event) {
 	element.classList.add(newStyle);
 }
 
-/*
-<div class="cardInfo">
-                  <h4><b>Events</b></h4>
-                  <p>List of Events|</p>
-                </div>
 
-names":"Ciber papeleria misterpc",
-"addresses":"Artes Plásticas 273, Miravalle, 44990 Guadalajara, Jal.",
-"phone_numbers":"3327946713",
-"URL": "None",
-"logo":"images/directory/misterpc.png",
-"membership_level": "Silver Membership",
-"Other_Info"
-*/
