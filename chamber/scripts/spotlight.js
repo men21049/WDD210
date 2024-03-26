@@ -13,7 +13,7 @@ const usedIdx = [];
 
 window.onload = () =>{
     let usedIdx = [];
-    let counter = 0;
+
 
     async function getLinks() {
         const response = await fetch(url);
@@ -26,14 +26,15 @@ window.onload = () =>{
        
        const firstRandom = getRandomIDX(fmembers.length);
        const secondRandom = getRandomIDX(fmembers.length);
-       const thirRandom = getRandomIDX(fmembers.length);
-
+       const thirdRandom = getRandomIDX(fmembers.length);
+       
+       console.log(usedIdx);
        busdef1.textContent = fmembers[firstRandom].description;
        busdef2.textContent = fmembers[secondRandom].description;
-       busdef3.textContent = fmembers[thirRandom].description;
+       busdef3.textContent = fmembers[thirdRandom].description;
        busTitle1.textContent = fmembers[firstRandom].names;
        busTitle2.textContent = fmembers[secondRandom].names;
-       busTitle3.textContent = fmembers[thirRandom].names;
+       busTitle3.textContent = fmembers[thirdRandom].names;
 
        if(fmembers[firstRandom].logo == "None"){
             busimg1.setAttribute('src','https://placehold.co/280x200/png');
@@ -57,20 +58,20 @@ window.onload = () =>{
             busimg2.setAttribute('height','200');                
         }
 
-        if(fmembers[thirRandom].logo == "None"){
+        if(fmembers[thirdRandom].logo == "None"){
             busimg3.setAttribute('src','https://placehold.co/280x200/png');
             busimg3.setAttribute('srcset','https://placehold.co/280x200/png');
         }
         else{
-            busimg3.setAttribute('src',img_url+fmembers[thirRandom].logo);
-            busimg3.setAttribute('srcset',img_url+fmembers[thirRandom].logo);
+            busimg3.setAttribute('src',img_url+fmembers[thirdRandom].logo);
+            busimg3.setAttribute('srcset',img_url+fmembers[thirdRandom].logo);
             busimg3.setAttribute('width','280');
             busimg3.setAttribute('height','200');                
         }
         
         busimg1.setAttribute('alt',fmembers[firstRandom].names);
         busimg2.setAttribute('alt',fmembers[secondRandom].names);
-        busimg3.setAttribute('alt',fmembers[thirRandom].names);
+        busimg3.setAttribute('alt',fmembers[thirdRandom].names);
 
     }
 
