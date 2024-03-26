@@ -10,6 +10,7 @@ const busimg1 = document.querySelector('.busimg1');
 const busimg2 = document.querySelector('.busimg2');
 const busimg3 = document.querySelector('.busimg3');
 const usedIdx = [];
+const counter = 0;
 
 window.onload = () =>{
     let usedIdx = [];
@@ -24,11 +25,25 @@ window.onload = () =>{
     function displaySpotlight(members){
        const fmembers = members.filter(item => item.membership_level === "Silver Membership" || item.membership_level === "Gold Membership");
        
-       const firstRandom = getRandomIDX(fmembers.length);
-       const secondRandom = getRandomIDX(fmembers.length);
-       const thirdRandom = getRandomIDX(fmembers.length);
+       let firstRandom = getRandomIDX(fmembers.length);
+       while(firstRandom === undefined){
+        firstRandom = getRandomIDX(fmembers.length);
+       }
+       let secondRandom = getRandomIDX(fmembers.length);
+    
+       while(secondRandom === undefined){
+        firstRandom = getRandomIDX(fmembers.length);
+       }
+       let thirdRandom = getRandomIDX(fmembers.length);
        
+       while(thirdRandom === undefined){
+        thirdRandom = getRandomIDX(fmembers.length);
+       }
+
        console.log(usedIdx);
+       console.log(fmembers);
+       console.log(secondRandom);
+       console.log(thirdRandom);
        busdef1.textContent = fmembers[firstRandom].description;
        busdef2.textContent = fmembers[secondRandom].description;
        busdef3.textContent = fmembers[thirdRandom].description;
@@ -76,14 +91,13 @@ window.onload = () =>{
     }
 
     function getRandomIDX(len){
+
         const randomIdx = parseInt(Math.random() * len);
+        const lenDat = parseInt(len);
 
         if(!usedIdx.includes(randomIdx)){
             usedIdx.push(randomIdx);
             return randomIdx;
-        }
-        else{
-            getRandomIDX(len);
         }
 
     }
