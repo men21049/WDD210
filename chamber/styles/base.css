@@ -404,7 +404,7 @@ main{
   {
     background-color: #eee;
     display: block;
-    border: solid --px-size #999;
+    border: solid var(--px-size) #999;
     border-radius: 6px;
     padding: .75rem;
     color: #555;
