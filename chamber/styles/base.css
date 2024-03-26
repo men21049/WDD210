@@ -13,7 +13,7 @@ footer{
     text-align: center;
 }
 nav {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: 100%;
 }
@@ -25,8 +25,7 @@ main{
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #141B41;
- 	position: absolute;
+	color: #141B41;    
 	top: 1rem;
 	right: 1rem;
   z-index: 9999;
@@ -437,35 +436,6 @@ main{
     border-right: solid 8px green;
   }
 
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 220px;
-    background-color: black;
-    color: #fff;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
 
   .members {
     width: 90vw;
@@ -507,4 +477,32 @@ main{
   
   .list {
     grid-template-columns: 1fr;
+  }
+
+  .banner{
+    background: var(--legen-color);
+  }
+
+  .banner_content{
+    padding: 16px;
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner_text{
+    flex-grow: 1;
+    line-height: 1.4;
+  }
+
+  .banner_close{
+    background:none;
+    border:none;
+    cursor:pointer;
+  }
+
+  .banner_text,
+  .banner_close > span{
+    color: #ffffff;
   }
