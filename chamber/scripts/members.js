@@ -1,6 +1,12 @@
 const url = "https://men21049.github.io/wdd230/data/members.json";
 const img_url = "https://men21049.github.io/wdd230/chamber/";
 const display = document.querySelector("#card-wrapper");
+const gridBtn = document.getElementById('gridBtn');
+const listBtn = document.getElementById('listBtn');
+
+
+gridBtn.addEventListener('click', clickButton);
+listBtn.addEventListener('click', clickButton);
 
 
 window.onload = () =>{
@@ -53,12 +59,6 @@ window.onload = () =>{
 
     getLinks();
 }
-
-const gridBtn = document.getElementById('gridBtn');
-const listBtn = document.getElementById('listBtn');
-
-gridBtn.addEventListener('click', clickButton);
-listBtn.addEventListener('click', clickButton);
 
 function clickButton(event) {
 	event.preventDefault();

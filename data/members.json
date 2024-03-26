@@ -7,6 +7,7 @@
             "URL": "None",
             "logo":"images/directory/misterpc.png",
             "membership_level": "Silver Membership",
+            "description":"Cyber cafe since 1997",
             "Other_Info": "  "
         },
         {
@@ -16,6 +17,7 @@
             "URLs":"None",
             "logo":"images/directory/noticiasMiravalle.png",
             "membership_level":"Silver Membership",
+            "description":"The News place for Miravalle",
             "Other_Info": "News Organization"
         },
         {
@@ -25,6 +27,7 @@
             "URLs":"None",
             "logo":"None",
             "membership_level":"Bronze Membership",
+            "description":"The most complete and better stocked convinient store in Miravalle",
             "Other_Info": "Convinience Store"
         },
         {
@@ -34,6 +37,7 @@
             "URLs":"None",
             "logo":"None",
             "membership_level":"Bronze Membership",
+            "description":"Get All your nutrients in one place!",               
             "Other_Info":"Nutrition"
         },
         {
@@ -42,7 +46,8 @@
             "phone_numbers":"3336707821",
             "URLs":"None",
             "logo":"None",
-            "membership_level":"Bronze Membership",
+            "membership_level":"Silver Membership",
+            "description":"The market place of Miravalle",
             "Other_Info":"Market"
         },
         {
@@ -52,6 +57,7 @@
             "URLs":"None",
             "logo":"None",
             "membership_level":"Silver Membership",
+            "description":"Your trusted mechanic!",
             "Other_Info":"Mecanico"
         }
     ]
