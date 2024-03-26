@@ -23,53 +23,54 @@ window.onload = () =>{
     
     function displaySpotlight(members){
        const fmembers = members.filter(item => item.membership_level === "Silver Membership" || item.membership_level === "Gold Membership");
-    
-       console.log(fmembers.length);
-       getRandomIDX(fmembers.length);
+       
+       const firstRandom = getRandomIDX(fmembers.length);
+       const secondRandom = getRandomIDX(fmembers.length);
+       const thirRandom = getRandomIDX(fmembers.length);
 
-       busdef1.textContent = fmembers[0].description;
-       busdef2.textContent = fmembers[1].description;
-       busdef3.textContent = fmembers[2].description;
-       busTitle1.textContent = fmembers[0].names;
-       busTitle2.textContent = fmembers[1].names;
-       busTitle3.textContent = fmembers[2].names;
+       busdef1.textContent = fmembers[firstRandom].description;
+       busdef2.textContent = fmembers[secondRandom].description;
+       busdef3.textContent = fmembers[thirRandom].description;
+       busTitle1.textContent = fmembers[firstRandom].names;
+       busTitle2.textContent = fmembers[secondRandom].names;
+       busTitle3.textContent = fmembers[thirRandom].names;
 
-       if(fmembers[0].logo == "None"){
+       if(fmembers[firstRandom].logo == "None"){
             busimg1.setAttribute('src','https://placehold.co/280x200/png');
             busimg1.setAttribute('srcset','https://placehold.co/280x200/png');
         }
         else{
-            busimg1.setAttribute('src',img_url+fmembers[0].logo);
-            busimg1.setAttribute('srcset',img_url+fmembers[0].logo);
+            busimg1.setAttribute('src',img_url+fmembers[firstRandom].logo);
+            busimg1.setAttribute('srcset',img_url+fmembers[firstRandom].logo);
             busimg1.setAttribute('width','280');
             busimg1.setAttribute('height','200');                
         }
 
-        if(fmembers[1].logo == "None"){
+        if(fmembers[secondRandom].logo == "None"){
             busimg2.setAttribute('src','https://placehold.co/280x200/png');
             busimg2.setAttribute('srcset','https://placehold.co/280x200/png');
         }
         else{
-            busimg2.setAttribute('src',img_url+fmembers[1].logo);
-            busimg2.setAttribute('srcset',img_url+fmembers[1].logo);
+            busimg2.setAttribute('src',img_url+fmembers[secondRandom].logo);
+            busimg2.setAttribute('srcset',img_url+fmembers[secondRandom].logo);
             busimg2.setAttribute('width','280');
             busimg2.setAttribute('height','200');                
         }
 
-        if(fmembers[2].logo == "None"){
+        if(fmembers[thirRandom].logo == "None"){
             busimg3.setAttribute('src','https://placehold.co/280x200/png');
             busimg3.setAttribute('srcset','https://placehold.co/280x200/png');
         }
         else{
-            busimg3.setAttribute('src',img_url+fmembers[2].logo);
-            busimg3.setAttribute('srcset',img_url+fmembers[2].logo);
+            busimg3.setAttribute('src',img_url+fmembers[thirRandom].logo);
+            busimg3.setAttribute('srcset',img_url+fmembers[thirRandom].logo);
             busimg3.setAttribute('width','280');
             busimg3.setAttribute('height','200');                
         }
         
-        busimg1.setAttribute('alt',fmembers[0].names);
-        busimg2.setAttribute('alt',fmembers[1].names);
-        busimg3.setAttribute('alt',fmembers[2].names);
+        busimg1.setAttribute('alt',fmembers[firstRandom].names);
+        busimg2.setAttribute('alt',fmembers[secondRandom].names);
+        busimg3.setAttribute('alt',fmembers[thirRandom].names);
 
     }
 
