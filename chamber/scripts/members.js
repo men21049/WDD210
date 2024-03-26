@@ -43,7 +43,7 @@ window.onload = () =>{
 
             img.setAttribute('alt',name);
             address.textContent = "Address: " + member.address;
-            console.log(member.address);
+            
             phone.textContent = "Phone Number: " + member.phone_number;
             url.textContent = "Website: " + member.URL;
 
