@@ -236,6 +236,10 @@ main{
   .cardInfo {
     padding: 2px 16px;
   }
+
+  .cardInfo ul>li{
+    padding-bottom: 12px;
+  }
   .card img{
     display: block;
     border: #E6EED6;

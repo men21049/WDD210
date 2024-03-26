@@ -35,21 +35,27 @@
         </nav>
     </header>
     <br><br> <br><br>
-    <hr>
     <main id="main">
-
-        <div class="members">
-            <h1>Business Directory</h1>
-            <hr>
-            <div class="buttons">
-                <button class="btn" id="gridBtn">Grid</button>
-                <button class="btn" id="listBtn">List</button>
-            </div>
-            <div id="card-wrapper" class="list">
-
-            </div>
-        </div>    
-        <div>
+        <form action="thankyou.html" class="wf1" method="get">
+            <fieldset>
+                <legend>User information</legend>
+                <label>First Name*: <input type="text" name="fname" id="fname" placeholder="First Name" required></label>
+                <label>Last Name*: <input type="text" name="lname" id="lname" placeholder="Last Name" required  ></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Email*: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9\_.-]+@[a-zA-Z0-9].[a-zA-Z]" placeholder="someone@email.com" required></label>
+                <label>Mobile Phone Number*: <input type="tel" name="mphone" id="mphone"  placeholder="1234567890" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>           
+                <label>Message:
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </label>
+                <input type="hidden" id="date" name="date">
+            </fieldset>
+            <input type="submit" name="submit" value="Send Message">
+        </form>
     </main>
     <br>
     <footer class="shadow bottom">
@@ -64,6 +70,6 @@
 </div>
 <script src="scripts/getdate.js"></script>
 <script src="scripts/menu.js"></script>
-<script src="scripts/members.js"></script>
+<script src="scripts/form.js"></script>
 </body>
 </html>
