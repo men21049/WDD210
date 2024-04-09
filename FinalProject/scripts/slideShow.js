@@ -1,9 +1,9 @@
 const dot1 = document.getElementById("dot1");
 const dot2 = document.getElementById("dot2");
 const dot3 = document.getElementById("dot3");
-const prev = document.getElementsByClassName(".prev");
-const next = document.getElementsByClassName(".next");
-const slideIndex = 1;
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+let slideIndex = 1;
 
 dot1.addEventListener("click",showSlides(1));
 dot1.addEventListener("click",showSlides(2));
