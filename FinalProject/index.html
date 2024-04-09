@@ -6,7 +6,7 @@
     <meta name="author" content="Juan Carlos Mena Osorio">
     <meta name="description" content="Website for rental scooter company ~Scoots~. The site offers information about their services and how to rent a vehicle">
     <title>🛵 Scoots, rental Company</title>
-    <meta property="og:title" content="Website for Scoots, retnal Company" >
+    <meta property="og:title" content="Website for Scoots, rental Company" >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://men21049.github.io/wdd230/FinalProject/" >
     <meta property="og:image" content="" >
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <div class="banner">
             <div class="banner_content">
                 <div class="banner_text">
@@ -29,29 +29,23 @@
                     </span>
                 </button>            
             </div>
-    
         </div>
-        <div class="headerMenuLogo">
-            <picture>
+            <picture class="logo">
                 <source media="(min-width:600px)" srcset="images/Scoots.webp">
                 <source media="(max-width:599px)" srcset="images/Scoots_Small.webp">
-                <img class="" src="images/Scoots_Small.webp" alt="Scoots logo">
+                <img class="logo" src="images/Scoots_Small.webp" alt="Scoots logo">
             </picture>
-            <nav class="navigation">
-                <div class="topnav" id="myTopnav">
-                    <a href="#home" class="active">🏠 Home</a>
-                    <a href="">🛵 Rental</a>
-                    <a href="#contact">📝 Contact</a>
-                    <a href="#about">⛱️ About</a>
-                    <a href="#" class="icon">
-                        <i class="fa fa-bars"></i>
-                      </a>
-                </div>
-            </nav>
-        </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">🏠 Home</a></li>
+              <li><a href="rental.html">🛵 Rental</a></li>
+              <li><a href="contact.html">📝 Contact</a></li>
+              <li><a href="about.html">⛱️ About</a></li>
+            </ul>
     </header>
     <br><hr>
-    <main>
+    <main class="main">
         <div class="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
