@@ -2,13 +2,13 @@
     "cozumel":[
         {
             "title" : "Welcome to Cozumel",
-            "description" : "We have two locations to serve you better. Come and visit us",
+            "description" : "We have two locations to serve you better. Next to the Ferry dock and Terminal Puerta Maya",
             "img"   : "/images/cozumel.webp"
         },
         {
             "title" : "Scoot is the solution to sight see Cozumel",
             "description" : "We have two locations to serve you better. Come and visit us",
-            "img"   : "/images/cozumel.webp"
+            "img"   : "/images/cozumel_beach.webp"
         }
     ]
 }
