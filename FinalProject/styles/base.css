@@ -217,6 +217,14 @@ a{
 .cardInfo ul>li{
   padding-bottom: 12px;
 }
+
+.cardInfo{
+  width: 100%;
+  background-color: var(--torpicalIndigoColor);
+  color:var(--linenColor);
+  text-align: center;
+}
+
 /*
 .mySlides {display: none}
 .slideImg {vertical-align: middle;}
