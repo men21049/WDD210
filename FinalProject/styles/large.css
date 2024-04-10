@@ -19,4 +19,8 @@
     .header .menu-icon {
     display: none;
     }
+
+    .carousel-item {
+        width: 33.33%;
+      }
 }
