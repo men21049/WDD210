@@ -178,6 +178,13 @@ a{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.shadow {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  align-items: center;
+  justify-content: center;
+}
+
 .mainInfoSection{
     border: 1px solid rgba(0,0,0,.1);
 }
@@ -252,3 +259,74 @@ table {
   background-color: #4CAF50;  
   color: white;  
   }  
+
+  .wf1 fieldset{
+    margin: 2rem 0;
+    border: var(--px-size) solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+  }
+
+  .wf1 legend{
+    color:var(--legen-color);
+    padding: 0 .5rem;
+  }
+
+  .wf1 label{
+    display: block;
+    padding-top: var(--pane-padding);
+    color: #46237A;
+    font-size: .9rem;
+  }
+
+  .wf1 .wf1_div{
+    padding-top: var(--pane-padding);
+    color:var(--legen-color);
+    font-size: .9rem;
+  }
+
+  .wf1 input[type="text"],
+  .wf1 input[type="password"],
+  .wf1 input[type="email"],
+  .wf1 input[type="tel"],
+  .wf1 textarea
+  {
+    background-color: #eee;
+    display: block;
+    border: solid var(--px-size) #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .wf1 input[type="radio"],
+  .wf1 input[type="checkbox"]{
+    margin-right: 6px;
+  }
+
+  .wf1 input[type="submit"]{
+    border: none;
+    background-color: #46237A;
+    /*background-image: linear-gradient(#46237A, #FF495C);*/
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+  }
+
+  .wf1 input:required{
+    border-right: solid 8px red;
+  }
+
+  .wf1 input:required:valid{
+    border-right: solid 8px green;
+  }
+
+  .impText{
+    color: var(--darkPurpleColor);
+    
+  }
