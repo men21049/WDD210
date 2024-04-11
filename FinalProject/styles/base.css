@@ -289,6 +289,11 @@ table {
   .wf1 input[type="password"],
   .wf1 input[type="email"],
   .wf1 input[type="tel"],
+  .wf1 input[type="date"],
+  .wf1 input[type="cruiseLine"],
+  .wf1 input[type="state"],
+  .wf1 select[type="rental"],
+  .wf1 input[type="checkbox"],
   .wf1 textarea
   {
     background-color: #eee;
@@ -308,7 +313,7 @@ table {
 
   .wf1 input[type="submit"]{
     border: none;
-    background-color: #46237A;
+    background-color: var(--amethystColor);
     /*background-image: linear-gradient(#46237A, #FF495C);*/
     color: #fff;
     border-radius: 6px;
@@ -328,5 +333,4 @@ table {
 
   .impText{
     color: var(--darkPurpleColor);
-    
   }
