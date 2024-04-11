@@ -9,6 +9,11 @@
             "title" : "Scoot is the solution to sight see Cozumel",
             "description" : "We have two locations to serve you better. Come and visit us",
             "img"   : "/images/cozumel_beach.webp"
+        },
+        {
+            "title" : "We help you enjoy Cozumel to its fullest",
+            "description" : "We have two locations to serve you better. Come and visit us",
+            "img"   : "/images/cozumel_scuba.webp"
         }
     ]
 }

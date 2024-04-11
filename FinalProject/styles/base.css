@@ -218,6 +218,11 @@ a{
   padding-bottom: 12px;
 }
 
+.cardInfo li{
+  list-style-type:none; 
+  text-align: left;
+}
+
 .cardInfo{
   width: 100%;
   background-color: var(--torpicalIndigoColor);
@@ -225,6 +230,12 @@ a{
   text-align: center;
 }
 
+.info{
+  background-color: var(--linenColor);
+  color:var(--darkPurpleColor);
+  font-weight: bold;
+  text-align: left;  
+}
 /*
 .mySlides {display: none}
 .slideImg {vertical-align: middle;}

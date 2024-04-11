@@ -21,6 +21,7 @@ window.onload = () =>{
         description.textContent = cozumel[idx].description;
         image.setAttribute('src',img_url+ cozumel[idx].img);
         image.setAttribute('srcset',img_url+ cozumel[idx].img);
+        image.setAttribute('alt',cozumel[idx].title);
       }
 
       function getRndInteger(min, max) {
