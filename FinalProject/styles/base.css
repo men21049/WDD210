@@ -334,3 +334,7 @@ table {
   .impText{
     color: var(--darkPurpleColor);
   }
+
+  footer{
+    display: inline;
+  }
