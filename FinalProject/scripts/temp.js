@@ -27,7 +27,7 @@ async function displayWeather(){
 
     const data = await apiFetch(urlCurrentTemp);
  
-    currentTemp.textContent = "Current Temp is " + data.main.temp + "°F, and a humidity of " + data.main.humidity;
+    currentTemp.textContent = "Current Temp is " + data.main.temp + "°F, and a humidity of " + data.main.humidity + "%";
     weatherIcon.setAttribute('src',`https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     let descriptions = data.weather[0].description.split(" ");
     descriptions.forEach((element, index) => {
@@ -45,7 +45,7 @@ async function displayWeather(){
 async function displayForecast(){
     const data = await apiFetch(urlForecastTemp);
     const temp1 = data.list[0].main.temp;
-    fWeather1.textContent = `Tomorrow's forecast is ${temp1}°F`;
+    fWeather1.textContent = `Tomorrow's forecast temp will be ${temp1}°F`;
 }
 
 function dateFormat(dt){
